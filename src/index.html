@@ -4,7 +4,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="./output.css" rel="stylesheet">
-        <title>TinoCode | Home</title>
+
+        <!-- afacad -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+        <!-- quicksand -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+        <title>TinoCode</title>
     </head>
     
     <!-- component -->
@@ -12,10 +22,10 @@
 
         <header>
             <!-- NAVBAR -->
-            <nav class="relative px-4 py-4 flex justify-between items-center bg-white">
+            <nav class="fixed top-0 left-0 right-0 z-50  px-10 py-4 flex justify-between items-center bg-black">
                 <!-- Logo -->
                 <a class="text-3xl font-bold leading-none" href="#">
-                    <img src="/images/logo.svg" alt="logo_tinocode" width="290">
+                    <img src="/images/logo.svg" alt="" width="200">
                 </a>
 
                 <!-- Mobile menu -->
@@ -32,8 +42,8 @@
                 <ul class="px-7 py-2 rounded-lg hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-3">
 
                     <!-- Link Inicio -->
-                    <li><a class="text-base text-black hover:text-white font-bold bg-white px-3 py-2 hover:bg-indigo-700 rounded-md transition duration-300 ease-in-out" href="#">Inicio</a></li>
-                    <li class="text-indigo-800">
+                    <li><a class="text-base text-white hover:text-white font-medium bg-black px-3 py-1 hover:bg-orange-500 rounded-md transition duration-300 ease-in-out" href="#home">Home</a></li>
+                    <li class="text-orange-500">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
                             viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -42,8 +52,8 @@
                     </li>
 
                     <!-- Link Nosotros -->
-                    <li><a class="text-base text-black hover:text-white font-bold bg-white px-3 py-2 hover:bg-indigo-700 rounded-md transition duration-300 ease-in-out" href="about.html">Nosotros</a></li>
-                    <li class="text-indigo-800">
+                    <li><a class="text-base text-white hover:text-white font-medium bg-black px-3 py-1 hover:bg-orange-500 rounded-md transition duration-300 ease-in-out" href="about.html">About</a></li>
+                    <li class="text-orange-500">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
                             viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -52,8 +62,8 @@
                     </li>
 
                     <!-- Link Servicios -->
-                    <li><a class="text-base text-black hover:text-white font-bold bg-white px-3 py-2 hover:bg-indigo-700 rounded-md transition duration-300 ease-in-out" href="#">Servicios</a></li>
-                    <li class="text-indigo-800">
+                    <li><a class="text-base text-white hover:text-white font-medium bg-black px-3 py-1 hover:bg-orange-500 rounded-md transition duration-300 ease-in-out" href="#services">Services</a></li>
+                    <li class="text-orange-500">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
                             viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -62,8 +72,8 @@
                     </li>
 
                     <!-- Link Portafolio -->
-                    <li><a class="text-base text-black hover:text-white font-bold bg-white px-3 py-2 hover:bg-indigo-700 rounded-md transition duration-300 ease-in-out" href="#">Portfolio</a></li>
-                    <li class="text-indigo-800">
+                    <li><a class="text-base text-white hover:text-white font-medium bg-black px-3 py-1 hover:bg-orange-500 rounded-md transition duration-300 ease-in-out" href="#portfolio">Portfolio</a></li>
+                    <li class="text-orange-500">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
                             viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -72,11 +82,11 @@
                     </li>
 
                     <!-- Link Contacto -->
-                    <li><a class="text-base text-black hover:text-white font-bold bg-white px-3 py-2 hover:bg-indigo-700 rounded-md transition duration-300 ease-in-out" href="#">Contacto</a></li>
+                    <li><a class="text-base text-white hover:text-white font-medium bg-black px-3 py-1 hover:bg-orange-500 rounded-md transition duration-300 ease-in-out" href="#contact">Contact</a></li>
                 </ul>
-                <a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-base text-gray-900 font-bold  rounded-xl transition duration-200"
+                <a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-1 px-6 bg-gray-50 hover:bg-gray-100 text-base text-gray-900 font-bold  rounded-xl transition duration-200"
                     href="#">Sign In</a>
-                <a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-base text-white font-bold rounded-xl transition duration-200"
+                <a class="hidden lg:inline-block py-1 px-6 bg-orange-500 hover:bg-orange-600 text-base text-white font-bold rounded-xl transition duration-200"
                     href="#">Sign up</a>
             </nav>
 
@@ -100,23 +110,23 @@
                         <ul>
                             <li class="mb-1">
                                 <a class="block p-4 text-base font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                    href="#">Inicio</a>
+                                    href="#home">Home</a>
                             </li>
                             <li class="mb-1">
                                 <a class="block p-4 text-base font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                    href="#">Nosotros</a>
+                                    href="#about">About</a>
                             </li>
                             <li class="mb-1">
                                 <a class="block p-4 text-base font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                    href="#">Servicios</a>
+                                    href="#services">Services</a>
                             </li>
                             <li class="mb-1">
                                 <a class="block p-4 text-base font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                    href="#">Portfolio</a>
+                                    href="#portfolio">Portfolio</a>
                             </li>
                             <li class="mb-1">
                                 <a class="block p-4 text-base font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                    href="#">Contacto</a>
+                                    href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -141,44 +151,119 @@
         
         <main>
             <!-- MENU DE INICIO -->
-            <section class="mt-10">
-
-                <div class="lg:flex container mx-auto items-center bg-gradient-to-r from-indigo-800 to-sky-500 p-10 rounded-xl text-white">
-
-                    <div class="lg:w-1/2">
-                        <h1 class="text-5xl sm:text-center lg:text-start py-5">
-                            <span class="font-semibold">Reny Sánchez -</span> <span class="font-bold">TINOCODE</span> <span class="font-semibold">Tecnólogo en Desarrollo de Software.</span> 
-                        </h1>
-                        <p class="text-2xl font-normal px-8 pt-5">
-                            Apasionado por la creación de soluciones informáticas a través del desarrollo de software. Con experiencia en proyectos web y móviles utilizando tecnologías modernas.
-                        </p>
-                        <div class="flex mt-16 mx-10 justify-center">
-                            <a href="#" class="bg-black hover:bg-white text-white hover:text-black p-3 mx-6 rounded-full font-semibold transition duration-300 ease-in-out">
-                              Conoce un poco más de Reny
-                            </a>
-
+            <section id="home" class="">
+                  
+                <!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com --> 
+            <div id="carouselExampleCaptions" class="relative" data-te-carousel-init data-te-ride="carousel">
+                <!--Carousel indicators-->
+                <div class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+                    data-te-carousel-indicators>
+                    <button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="0" data-te-carousel-active
+                        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="1"
+                        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="2"
+                        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                        aria-label="Slide 3"></button>
+                </div>
             
-                            <span class="text-right">
-                              <a href="#" class="inline-block font-semibold"> tinors.code@gmail.com </a><br>
-                              <span class="inline-block">Envíame un mensaje</span>
-                            </span>
+                <!--Carousel items-->
+                <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+                    <!--First item-->
+                    <div class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                        data-te-carousel-active data-te-carousel-item style="backface-visibility: hidden">
+                        <img src="/images/sliders/fondo1.jpg" class="block w-full" alt="..." />
+                        <div class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+                            <h5 class="text-xl">First slide label</h5>
+                            <p>
+                                Some representative placeholder content for the first slide.
+                            </p>
                         </div>
                     </div>
-
-                    <div class="lg:w-1/2 sm:mt-10 flex justify-center">
-                        <img class="sm:rounded-2xl lg:rounded-full" src="/images/2.jpg" alt="inicio" width="500">
+                    <!--Second item-->
+                    <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                        data-te-carousel-item style="backface-visibility: hidden">
+                        <img src="/images/sliders/fondo2.jpg" class="block w-full" alt="..." />
+                        <div class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+                            <h5 class="text-xl">Second slide label</h5>
+                            <p>
+                                Some representative placeholder content for the second slide.
+                            </p>
+                        </div>
+                    </div>
+                    <!--Third item-->
+                    <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                        data-te-carousel-item style="backface-visibility: hidden">
+                        <img src="/images/sliders/fondo3.jpg" class="block w-full" alt="..." />
+                        <div class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+                            <h5 class="text-xl">Third slide label</h5>
+                            <p>
+                                Some representative placeholder content for the third slide.
+                            </p>
+                        </div>
                     </div>
                 </div>
+            
+                <!--Carousel controls - prev item-->
+                <button
+                    class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                    type="button" data-te-target="#carouselExampleCaptions" data-te-slide="prev">
+                    <span class="inline-block h-8 w-8">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                        </svg>
+                    </span>
+                    <span
+                        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Previous</span>
+                </button>
+                <!--Carousel controls - next item-->
+                <button
+                    class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                    type="button" data-te-target="#carouselExampleCaptions" data-te-slide="next">
+                    <span class="inline-block h-8 w-8">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </span>
+                    <span
+                        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
+                </button>
+            </div>
+
+                <!-- <div class="lg:flex items-center bg-gradient-to-r from-orange-500 to-white p-10 text-white h-96">
+
+                    <div class="lg:w-1/2">
+                        <h1 class="font-afacad font-bold text-5xl sm:text-center lg:text-start py-3">
+                            Transformamos ideas en identidades únicas y creativas.
+                        </h1>
+                        <p class="font-afacad text-2xl font-normal pt-3">
+                            Por que todos merecemos cosas únicas.
+                        </p>
+                        <div class="flex md:flex mt-8  justify-between lg:justify-left items-center">
+                            <a href="about.html" class="bg-black hover:bg-white text-white hover:text-black p-3   font-semibold transition duration-300 ease-in-out">
+                              Contáctanos
+                            </a>
+
+
+                        </div>                        
+                    </div>
+                </div> -->
             </section>
             <!-- FIN DE MENU DE INICIO -->
 
 
             <!-- SERVICIOS -->
-            <section>
+            <section id="services">
                 <div class="my-20">
+
+                    
                     <div class="mx-auto text-center md:max-w-xl lg:max-w-4xl">
                         <h3 class="uppercase text-center font-bold text-4xl mb-6">
-                            SERVICIO DE CALIDAD PARA USTED Y SU EMPRENDIMIENTO
+                            SERVICIO DE CALIDAD PARA TI Y SU EMPRENDIMIENTO
                         </h3>
                         <p class="mb-6 pb-2 md:mb-12 md:pb-0">
                             La transparencia es clave en cualquier proyecto exitoso. Para lograr esto se requiere una comunicación abierta y constante, así nos aseguramos que estemos alineados en objetivos y expectativas. Trabajar juntos significa construir una asociación sólida basada en la confianza y la colaboración efectiva.
@@ -187,10 +272,43 @@
 
                     <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
 
-                        <div class="max-w-xl overflow-hidden shadow-lg hover:drop-shadow-lg rounded-xl">
-                            <img class="w-full" src="/images/services/foto.jpg" alt="Sunset in the mountains">
+                        <!-- DESARROLLO PAGINAS WEB -->
+                        <div class="max-w-xl overflow-hidden shadow-lg hover:drop-shadow-md rounded-xl">
+                            <img class="w-full" src="/images/services/desarrollo-web.jpg" alt="Sunset in the mountains">
                             <div class="px-6 py-4">
-                                <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                                <div class="font-bold text-xl mb-2">Desarrollo de Sitios Web</div>
+                                <p class="text-gray-700 text-base">
+                                    Es hora de llevar tu visión al mundo digital. Ofrecemos servicios de desarrollo de sitios web que van más allá de simples páginas; creamos soluciones web a medida que se adaptan a las necesidades específicas de tu negocio, garantizando funcionalidades avanzadas y un rendimiento óptimo totalmente funcional y adaptativo diferentes pantallas.
+                                </p>
+                            </div>
+                            <div class="px-6 pt-4 pb-2">
+                                <a href="#plans" class="inline-block bg-black hover:bg-blue-600 text-white hover:text-white rounded-full px-4 py-2 text-sm font-semibold mr-2 mb-2 transition duration-300 ease-in-out">
+                                    Cotizar tu Página Web
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- DESARROLLO SISTEMAS WEB -->
+                        <div class="max-w-xl overflow-hidden shadow-lg hover:drop-shadow-lg rounded-xl">
+                            <img class="w-full" src="/images/services/sistemas-web.jpg" alt="Sunset in the mountains">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-xl mb-2">Desarrollo de Sistemas Web</div>
+                                <p class="text-gray-700 text-base">
+                                    Creamos sistemas web personalizados que se adaptan a los procesos y requisitos exclusivos de tu empresa, priorizando la seguridad de tus datos y mantener la confidencialidad de la información. Además contará con una escalabilidad y flexibilidad para que esté preparado para adaptarse a los cambios y nuevas demandas.
+                                </p>
+                            </div>
+                            <div class="px-6 pt-4 pb-2">
+                                <a href="#plans" class="inline-block bg-black hover:bg-blue-600 text-white hover:text-white rounded-full px-4 py-2 text-sm font-semibold mr-2 mb-2 transition duration-300 ease-in-out">
+                                    Automatiza tu Empresa
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- DESARROLLO APP MOVILES -->
+                        <div class="max-w-xl overflow-hidden shadow-lg hover:drop-shadow-lg rounded-xl">
+                            <img class="w-full" src="/images/services/proximamente.jpg" alt="Sunset in the mountains">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-xl mb-2">Desarrollo de Aplicaciones Móviles</div>
                                 <p class="text-gray-700 text-base">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis
                                     eaque, exercitationem praesentium nihil.
@@ -206,10 +324,91 @@
                             </div>
                         </div>
 
+                        <!-- SERVICIO DE MANTENIMIENTO -->
                         <div class="max-w-xl overflow-hidden shadow-lg hover:drop-shadow-lg rounded-xl">
-                            <img class="w-full" src="/images/services/foto.jpg" alt="Sunset in the mountains">
+                            <img class="w-full" src="/images/services/mantenimiento.jpg" alt="Sunset in the mountains">
                             <div class="px-6 py-4">
-                                <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                                <div class="font-bold text-xl mb-2">Mantenimiento de Ordenadores</div>
+                                <p class="text-gray-700 text-base">
+                                    Quieres mantener tu hardware y software actualizados para un rendimiento eficiente?. Nos encargamos de abordar rápidamente cualquier problema, ya sea de hardware o software. Establecemos rutinas de copia de seguridad y ofreciendo servicios de recuperación en caso de pérdida de datos. Además, implementamos medidas robustas para resguardar tus sistemas contra amenazas cibernéticas. Confía en nosotros para asegurar la integridad y el rendimiento óptimo de tus equipos y datos.
+                                </p>
+                            </div>
+                            <div class="px-6 pt-4 pb-2">
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-4 py-2 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-4 py-2 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-4 py-2 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                            </div>
+                        </div>
+
+                        <!-- VENTA DE EQUIPO POS -->
+                        <div class="max-w-xl overflow-hidden shadow-lg hover:drop-shadow-lg rounded-xl">
+                            <img class="w-full" src="/images/services/pos.jpg" alt="Sunset in the mountains">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-xl mb-2">POS - Equipos Puntos de Venta</div>
+                                <p class="text-gray-700 text-base">
+                                    Ofrecemos soluciones de Puntos de Venta (POS) diseñadas para optimizar y agilizar las operaciones de tu negocio. Nuestros equipos POS están  diseñados para satisfacer las necesidades específicas de tu industria, brindando una experiencia de compra sin complicaciones para tus clientes y mejorando la eficiencia operativa.
+                                </p>
+                            </div>
+                            <div class="px-6 pt-4 pb-2">
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-4 py-2 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-4 py-2 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-4 py-2 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                            </div>
+                        </div>
+
+                        <!-- VENTA HOSTING Y DOMINIO -->
+                        <div class="max-w-xl overflow-hidden shadow-lg hover:drop-shadow-lg rounded-xl">
+                            <img class="w-full" src="/images/services/hosting.jpg" alt="Sunset in the mountains">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-xl mb-2">Venta Hosting y Dominios</div>
+                                <p class="text-gray-700 text-base">
+                                    Proporcionamos servicios de hosting web confiables y escalables, adaptados a las necesidades específicas de tu sitio, facilitando el proceso de registro y gestión de dominios, permitiéndote asegurar el nombre perfecto para tu sitio web. Además implementamos medidas avanzadas de seguridad para proteger tu sitio web y datos contra amenazas en línea. Certificados SSL, cortafuegos y copias de seguridad regulares forman parte integral de nuestros servicios.
+
+                                    A medida que tu sitio web experimenta un crecimiento, puedes confiar en la escalabilidad de nuestros servicios para acompañar ese desarrollo sin inconvenientes. 
+                                </p>
+                            </div>
+                            <div class="px-6 pt-4 pb-2">
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-4 py-2 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-4 py-2 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-4 py-2 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                            </div>
+                        </div>
+
+                        <!-- VENTA ORDENADORES -->
+                        <div class="max-w-xl overflow-hidden shadow-lg hover:drop-shadow-lg rounded-xl">
+                            <img class="w-full" src="/images/services/ordenadores.jpg" alt="Sunset in the mountains">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-xl mb-2">Equipos tecnológicos para el hogar</div>
+                                <p class="text-gray-700 text-base">
+                                    Ofrecemos una variada selección de computadoras personales y portátiles, que incluye desde modelos potentes ideales para tareas intensivas hasta opciones más ligeras y portátiles para mayor movilidad. Nos especializamos en proporcionar soluciones que fusionan un rendimiento excepcional con un diseño moderno, abordando así las diversas necesidades de tu familia.
+
+                                    Además, complementa tu entorno informático con nuestras opciones de impresión y escaneo a través de una amplia gama de impresoras y escáneres. Estos dispositivos están diseñados para brindar eficiencia y calidad en tus tareas cotidianas.
+                                </p>
+                            </div>
+                            <div class="px-6 pt-4 pb-2">
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-4 py-2 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-4 py-2 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-4 py-2 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                            </div>
+                        </div>
+
+                        <!-- VENTA LICENCIAS -->
+                        <div class="max-w-xl overflow-hidden shadow-lg hover:drop-shadow-lg rounded-xl">
+                            <img class="w-full" src="/images/services/proximamente.jpg" alt="Sunset in the mountains">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-xl mb-2">Licencias de Software</div>
                                 <p class="text-gray-700 text-base">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis
                                     eaque, exercitationem praesentium nihil.
@@ -225,67 +424,11 @@
                             </div>
                         </div>
 
+                        <!-- SERVICIOS DE MARKETING -->
                         <div class="max-w-xl overflow-hidden shadow-lg hover:drop-shadow-lg rounded-xl">
-                            <img class="w-full" src="/images/services/foto.jpg" alt="Sunset in the mountains">
+                            <img class="w-full" src="/images/services/proximamente.jpg" alt="Sunset in the mountains">
                             <div class="px-6 py-4">
-                                <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                                <p class="text-gray-700 text-base">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis
-                                    eaque, exercitationem praesentium nihil.
-                                </p>
-                            </div>
-                            <div class="px-6 pt-4 pb-2">
-                                <span
-                                    class="inline-block bg-gray-200 rounded-full px-4 py-2 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                                <span
-                                    class="inline-block bg-gray-200 rounded-full px-4 py-2 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                                <span
-                                    class="inline-block bg-gray-200 rounded-full px-4 py-2 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-                            </div>
-                        </div>
-
-                        <div class="max-w-xl overflow-hidden shadow-lg hover:drop-shadow-lg rounded-xl">
-                            <img class="w-full" src="/images/services/foto.jpg" alt="Sunset in the mountains">
-                            <div class="px-6 py-4">
-                                <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                                <p class="text-gray-700 text-base">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis
-                                    eaque, exercitationem praesentium nihil.
-                                </p>
-                            </div>
-                            <div class="px-6 pt-4 pb-2">
-                                <span
-                                    class="inline-block bg-gray-200 rounded-full px-4 py-2 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                                <span
-                                    class="inline-block bg-gray-200 rounded-full px-4 py-2 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                                <span
-                                    class="inline-block bg-gray-200 rounded-full px-4 py-2 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-                            </div>
-                        </div>
-
-                        <div class="max-w-xl overflow-hidden shadow-lg hover:drop-shadow-lg rounded-xl">
-                            <img class="w-full" src="/images/services/foto.jpg" alt="Sunset in the mountains">
-                            <div class="px-6 py-4">
-                                <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                                <p class="text-gray-700 text-base">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis
-                                    eaque, exercitationem praesentium nihil.
-                                </p>
-                            </div>
-                            <div class="px-6 pt-4 pb-2">
-                                <span
-                                    class="inline-block bg-gray-200 rounded-full px-4 py-2 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                                <span
-                                    class="inline-block bg-gray-200 rounded-full px-4 py-2 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                                <span
-                                    class="inline-block bg-gray-200 rounded-full px-4 py-2 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-                            </div>
-                        </div>
-
-                        <div class="max-w-xl overflow-hidden shadow-lg hover:drop-shadow-lg rounded-xl">
-                            <img class="w-full" src="/images/services/foto.jpg" alt="Sunset in the mountains">
-                            <div class="px-6 py-4">
-                                <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                                <div class="font-bold text-xl mb-2">Servicios de Diseño Gráfico</div>
                                 <p class="text-gray-700 text-base">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis
                                     eaque, exercitationem praesentium nihil.
@@ -527,28 +670,28 @@
 
                             <div class="flex justify-center">
                                 <div class="">
-                                    <h2 class="text-5xl font-bold mb-2">650</h2>
+                                    <h2 class="text-6xl font-bold mb-2">650</h2>
                                     <p class="text-xl font-semibold text-white">Clientes satisfechos</p>
                                 </div>
                             </div>
 
                             <div class="flex justify-center">
                                 <div class="">
-                                    <h2 class="text-5xl font-bold mb-2">+200</h2>
+                                    <h2 class="text-6xl font-bold mb-2">312</h2>
                                     <p class="text-xl font-semibold text-white">Recomendaciones</p>
                                 </div>
                             </div>
 
                             <div class="flex justify-center">
                                 <div class="">
-                                    <h2 class="text-5xl font-bold mb-2">+100</h2>
+                                    <h2 class="text-6xl font-bold mb-2">53</h2>
                                     <p class="text-xl font-semibold text-white">Proyectos realizados</p>
                                 </div>
                             </div>
 
                             <div class="flex justify-center">
                                 <div class="">
-                                    <h2 class="text-5xl font-bold mb-2">+10K</h2>
+                                    <h2 class="text-6xl font-bold mb-2">1596</h2>
                                     <p class="text-xl font-semibold text-white">Horas invertidas</p>
                                 </div>
                             </div>
@@ -560,7 +703,7 @@
             <!-- NUMEROS -->
 
             <!-- PORTFOLIO -->
-            <section>
+            <section id="portfolio">
                 <div class="my-20">
                     <div class="mx-auto text-center md:max-w-xl lg:max-w-4xl">
                         <h3 class="uppercase text-center font-bold text-4xl mb-6">PORTFOLIO</h3>
@@ -580,7 +723,7 @@
                         <!-- Paginas Web -->
                         <div class="max-w-2xl overflow-hidden shadow-lg rounded-xl">
                             
-                            <img class="w-full" src="/images/portfolio/blog-02.png" alt="Sunset in the mountains">
+                            <img class="w-full" src="/images/portfolio/soe-desing.jpg" alt="Sunset in the mountains">
                             
                             <div class="px-6 py-4">
                                 <div class="flex justify-start text-lg text-slate-500 font-semibold">
@@ -592,8 +735,8 @@
                                 </div>
 
                                 <div class="font-bold text-xl mt-5">
-                                    <h4 class="hover:text-blue-500">
-                                        <a href="blog-single.html">Página Web para agencia de Marketing</a>
+                                    <h4 class="hover:text-blue-500 transition duration-300">
+                                        <a href="https://tino1811.github.io/soe-design/index.html" target="_blank">Página Web para agencia de Marketing</a>
                                     </h4>
                                 </div>
                             </div>
@@ -602,7 +745,7 @@
                         <!-- Sistemas Web -->
                         <div class="max-w-2xl overflow-hidden shadow-lg rounded-xl">
                             
-                            <img class="w-full" src="/images/portfolio/blog-02.png" alt="Sunset in the mountains">
+                            <img class="w-full" src="/images/portfolio/mycfo.jpg" alt="Sunset in the mountains">
                             
                             <div class="px-6 py-4">
                                 <div class="flex justify-start text-lg text-slate-500 font-semibold">
@@ -614,8 +757,8 @@
                                 </div>
 
                                 <div class="font-bold text-xl mt-5">
-                                    <h4 class="hover:text-blue-500">
-                                        <a href="blog-single.html">Sistema de gestión Financiera para empresa</a>
+                                    <h4 class="hover:text-blue-500 transition duration-300">
+                                        <a href="https://my-cfo.online" target="_blank">Desarrollo Backend para sistema MYCFO</a>
                                     </h4>
                                 </div>
                             </div>
@@ -624,20 +767,20 @@
                         <!-- App Móviles -->
                         <div class="max-w-2xl overflow-hidden shadow-lg rounded-xl">
                             
-                            <img class="w-full" src="/images/portfolio/blog-02.png" alt="Sunset in the mountains">
+                            <img class="w-full" src="/images/portfolio/proximamente.jpg" alt="Sunset in the mountains">
                             
                             <div class="px-6 py-4">
                                 <div class="flex justify-start text-lg text-slate-500 font-semibold">
                                     <img src="/images/icons/icon-movil.svg" alt="User" class="mr-2"/>
-                                    <p>Aplicación Móvil</p>
+                                    <p>App Móvil</p>
 
                                     <img src="/images/icons/icon-calender.svg" alt="Calender" class="mr-2 ml-4"/>
-                                    <p>30 Jan, 2025</p>
+                                    <p>En desarrollo</p>
                                 </div>
 
                                 <div class="font-bold text-xl mt-5">
-                                    <h4 class="hover:text-blue-500">
-                                        <a href="blog-single.html">App móvil para Gestión de finanzas personales</a>
+                                    <h4 class="hover:text-blue-500 transition duration-300">
+                                        <a href="#" target="_blank">...</a>
                                     </h4>
                                 </div>
                             </div>
@@ -646,7 +789,7 @@
 
                     <div class="grid justify-items-center mt-10">
                         <a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-base text-white font-bold rounded-full transition duration-300"
-                            href="#">
+                            href="portfolio.html">
                             Ver más
                         </a>
                     </div>
@@ -706,7 +849,7 @@
             <!-- FIN EMPRESAS -->
 
             <!-- PRECIOS -->
-            <section>
+            <section id="plans">
                 <div class="my-20 h-auto px-5">
 
                     <div>
@@ -937,7 +1080,7 @@
             <!-- FIN PRECIOS -->
 
             <!-- CONTACTOS -->
-            <section>
+            <section id="contact">
                 <div class="container mx-auto rounded-xl mb-20 bg-gradient-to-r from-sky-800 to-indigo-500">
                     <div class="grid lg:grid-cols-2 sm:grid-rows-1 gap-10 text-white p-20">
 
@@ -994,27 +1137,27 @@
             <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
                 <nav class="flex flex-wrap justify-center -mx-5 -my-2">
                     <div class="px-5 py-2">
-                        <a href="#" class="text-base leading-6 text-gray-400 hover:text-white">
+                        <a href="#home" class="text-base leading-6 text-gray-400 hover:text-white">
                             Inicio
                         </a>
                     </div>
                     <div class="px-5 py-2">
-                        <a href="#" class="text-base leading-6 text-gray-400 hover:text-white">
+                        <a href="#services" class="text-base leading-6 text-gray-400 hover:text-white">
                             Servicios
                         </a>
                     </div>
                     <div class="px-5 py-2">
-                        <a href="#" class="text-base leading-6 text-gray-400 hover:text-white">
+                        <a href="#about" class="text-base leading-6 text-gray-400 hover:text-white">
                             Nosotros
                         </a>
                     </div>
                     <div class="px-5 py-2">
-                        <a href="#" class="text-base leading-6 text-gray-400 hover:text-white">
+                        <a href="#portfolio" class="text-base leading-6 text-gray-400 hover:text-white">
                             Portfolio
                         </a>
                     </div>
                     <div class="px-5 py-2">
-                        <a href="#" class="text-base leading-6 text-gray-400 hover:text-white">
+                        <a href="#contact" class="text-base leading-6 text-gray-400 hover:text-white">
                             Contacto
                         </a>
                     </div>
@@ -1063,7 +1206,7 @@
                     </a>
                 </div>
                 <p class="mt-8 text-base leading-6 text-center text-gray-400">
-                    © 2023 TINOCODE, 
+                    © 2023 @tinocode, 
                     <span class="text-gray-400 hover:text-white">
                         <a href="#">
                             All rights reserved.
@@ -1118,4 +1261,119 @@
             }
         });
     </script>
+
+    <!-- SCRIPT PARA DESPLAZARSE AL DAR CLICK EN UN LINK DEL HEADER  -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+           const links = document.querySelectorAll('a[href^="#"]');
+           
+           links.forEach(link => {
+              link.addEventListener('click', function (e) {
+                 e.preventDefault();
+                 
+                 const targetId = this.getAttribute('href').substring(1);
+                 const targetElement = document.getElementById(targetId);
+                 
+                 if (targetElement) {
+                    window.scrollTo({
+                       top: targetElement.offsetTop - 50, // Ajusta según sea necesario
+                       behavior: 'smooth'
+                    });
+                 }
+              });
+           });
+        });
+    </script>
+
+    <!-- SCRIPT NUMEROS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const counters = document.querySelectorAll('.text-6xl');
+    
+            const isElementInViewport = (el) => {
+                const rect = el.getBoundingClientRect();
+                return (
+                    rect.top >= 0 &&
+                    rect.left >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
+            };
+    
+            const handleScroll = () => {
+                counters.forEach((counter, index) => {
+                    if (isElementInViewport(counter) && !counter.dataset.counted) {
+                        const target = parseInt(counter.textContent);
+                        let count = 0;
+    
+                        const updateCounter = () => {
+                            const increment = target / 100; // Ajusta según sea necesario
+                            count += increment;
+                            counter.textContent = Math.floor(count);
+    
+                            if (count < target) {
+                                requestAnimationFrame(updateCounter);
+                            }
+                        };
+    
+                        updateCounter();
+    
+                        // Marcar como contado para evitar que se repita la animación
+                        counter.dataset.counted = true;
+                    }
+                });
+            };
+    
+            // Escucha el evento de desplazamiento
+            window.addEventListener('scroll', handleScroll);
+    
+            // Ejecuta la animación inicialmente si ya está en la vista al cargar la página
+            handleScroll();
+        });
+    </script>
+
+    <!-- gg -->
+    <script>
+        // Obtén todos los elementos del carrusel
+        const carouselItems = document.querySelectorAll('[data-te-carousel-item]');
+    
+        // Inicializa el carrusel
+        document.addEventListener('DOMContentLoaded', function () {
+            // Configura el índice actual del carrusel
+            let currentIndex = 0;
+    
+            // Función para mostrar el ítem del carrusel actual
+            const showCurrentItem = () => {
+                // Oculta todos los elementos del carrusel
+                carouselItems.forEach(item => {
+                    item.style.display = 'none';
+                });
+    
+                // Muestra el elemento actual
+                carouselItems[currentIndex].style.display = 'block';
+            };
+    
+            // Función para avanzar al siguiente ítem del carrusel
+            const nextItem = () => {
+                currentIndex = (currentIndex + 1) % carouselItems.length;
+                showCurrentItem();
+            };
+    
+            // Función para retroceder al ítem anterior del carrusel
+            const prevItem = () => {
+                currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+                showCurrentItem();
+            };
+    
+            // Mostrar el primer ítem al cargar la página
+            showCurrentItem();
+    
+            // Manejar clics en los botones de navegación
+            document.querySelector('[data-te-slide="prev"]').addEventListener('click', prevItem);
+            document.querySelector('[data-te-slide="next"]').addEventListener('click', nextItem);
+        });
+    </script>
+    
+
+
 </html>
